@@ -12,6 +12,9 @@
 		CEABFC9822D7F1DE00984420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9622D7F1DE00984420 /* Main.storyboard */; };
 		CEABFC9A22D7F1E000984420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9922D7F1E000984420 /* Assets.xcassets */; };
 		CEABFC9D22D7F1E000984420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9B22D7F1E000984420 /* LaunchScreen.storyboard */; };
+		CEABFCA622D7F9AD00984420 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCA522D7F9AD00984420 /* Bill.swift */; };
+		CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCAA22D7FBDC00984420 /* DateExtension.swift */; };
+		CEABFCAD22D7FC0B00984420 /* DollarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CEABFC9922D7F1E000984420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEABFC9C22D7F1E000984420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEABFC9E22D7F1E000984420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEABFCA522D7F9AD00984420 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		CEABFCAA22D7FBDC00984420 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		CEABFC9122D7F1DE00984420 /* C0753159_MidTerm_MAD3115S2019 */ = {
 			isa = PBXGroup;
 			children = (
+				CEABFCA922D7FB3400984420 /* Extensions */,
+				CEABFCA422D7F84C00984420 /* BillClasses */,
 				CEABFC9222D7F1DE00984420 /* AppDelegate.swift */,
 				CEABFC9422D7F1DE00984420 /* ViewController.swift */,
 				CEABFC9622D7F1DE00984420 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				CEABFC9E22D7F1E000984420 /* Info.plist */,
 			);
 			path = C0753159_MidTerm_MAD3115S2019;
+			sourceTree = "<group>";
+		};
+		CEABFCA422D7F84C00984420 /* BillClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CEABFCA522D7F9AD00984420 /* Bill.swift */,
+			);
+			path = BillClasses;
+			sourceTree = "<group>";
+		};
+		CEABFCA922D7FB3400984420 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEABFCAA22D7FBDC00984420 /* DateExtension.swift */,
+				CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEABFC9522D7F1DE00984420 /* ViewController.swift in Sources */,
+				CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */,
+				CEABFCA622D7F9AD00984420 /* Bill.swift in Sources */,
 				CEABFC9322D7F1DE00984420 /* AppDelegate.swift in Sources */,
+				CEABFCAD22D7FC0B00984420 /* DollarExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
