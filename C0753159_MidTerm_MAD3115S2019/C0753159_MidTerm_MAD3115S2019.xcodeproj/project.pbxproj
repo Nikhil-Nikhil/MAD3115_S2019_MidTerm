@@ -15,6 +15,8 @@
 		CEABFCA622D7F9AD00984420 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCA522D7F9AD00984420 /* Bill.swift */; };
 		CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCAA22D7FBDC00984420 /* DateExtension.swift */; };
 		CEABFCAD22D7FC0B00984420 /* DollarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */; };
+		CEABFCAF22D7FCAF00984420 /* GbExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCAE22D7FCAF00984420 /* GbExtension.swift */; };
+		CEABFCB122D7FCE400984420 /* UnitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB022D7FCE400984420 /* UnitExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CEABFCA522D7F9AD00984420 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		CEABFCAA22D7FBDC00984420 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarExtension.swift; sourceTree = "<group>"; };
+		CEABFCAE22D7FCAF00984420 /* GbExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GbExtension.swift; sourceTree = "<group>"; };
+		CEABFCB022D7FCE400984420 /* UnitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				CEABFCAA22D7FBDC00984420 /* DateExtension.swift */,
 				CEABFCAC22D7FC0B00984420 /* DollarExtension.swift */,
+				CEABFCAE22D7FCAF00984420 /* GbExtension.swift */,
+				CEABFCB022D7FCE400984420 /* UnitExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEABFC9522D7F1DE00984420 /* ViewController.swift in Sources */,
+				CEABFCB122D7FCE400984420 /* UnitExtension.swift in Sources */,
 				CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */,
+				CEABFCAF22D7FCAF00984420 /* GbExtension.swift in Sources */,
 				CEABFCA622D7F9AD00984420 /* Bill.swift in Sources */,
 				CEABFC9322D7F1DE00984420 /* AppDelegate.swift in Sources */,
 				CEABFCAD22D7FC0B00984420 /* DollarExtension.swift in Sources */,
