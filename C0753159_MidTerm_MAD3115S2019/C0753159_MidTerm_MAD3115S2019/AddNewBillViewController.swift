@@ -15,10 +15,14 @@ class AddNewBillViewController: UIViewController {
     @IBOutlet weak var txtemail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let add = UIBarButtonItem(title: "Add Customer", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goto))
+self.navigationItem.rightBarButtonItem = add
         // Do any additional setup after loading the view.
     }
-    
+    @objc func goto()
+    {
+        
+    }
 
     /*
     // MARK: - Navigation

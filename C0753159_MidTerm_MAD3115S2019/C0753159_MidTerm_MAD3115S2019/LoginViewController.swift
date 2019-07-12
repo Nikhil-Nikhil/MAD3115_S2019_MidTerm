@@ -44,8 +44,9 @@ class LoginViewController: UIViewController {
                 MyPlistData.GetCustomer()
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "Table")
+                let nc = UINavigationController(rootViewController: vc)
                 
-                self.present(vc, animated: true)
+                self.present(nc, animated: true)
                 
                 if Switch.isOn
                 {

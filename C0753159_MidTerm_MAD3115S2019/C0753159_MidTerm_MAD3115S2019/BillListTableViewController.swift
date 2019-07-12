@@ -10,8 +10,11 @@ import UIKit
 
 class BillListTableViewController: UITableViewController {
 
+    @IBOutlet weak var navBar: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(navBar.leftBarButtonItem?.title)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
