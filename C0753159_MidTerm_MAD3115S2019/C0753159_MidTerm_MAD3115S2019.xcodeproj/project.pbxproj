@@ -23,6 +23,7 @@
 		CEABFCB922D8069800984420 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB822D8069800984420 /* Hydro.swift */; };
 		CEABFCBB22D808D200984420 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCBA22D808D200984420 /* Mobile.swift */; };
 		CEABFCBD22D8098900984420 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCBC22D8098900984420 /* Internet.swift */; };
+		CEEB8D2722D80FBE003186EC /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEB8D2622D80FBE003186EC /* Users.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CEABFCB822D8069800984420 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		CEABFCBA22D808D200984420 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		CEABFCBC22D8098900984420 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		CEEB8D2622D80FBE003186EC /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				CEABFC9922D7F1E000984420 /* Assets.xcassets */,
 				CEABFC9B22D7F1E000984420 /* LaunchScreen.storyboard */,
 				CEABFC9E22D7F1E000984420 /* Info.plist */,
+				CEEB8D2622D80FBE003186EC /* Users.plist */,
 			);
 			path = C0753159_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				CEABFC9D22D7F1E000984420 /* LaunchScreen.storyboard in Resources */,
 				CEABFC9A22D7F1E000984420 /* Assets.xcassets in Resources */,
 				CEABFC9822D7F1DE00984420 /* Main.storyboard in Resources */,
+				CEEB8D2722D80FBE003186EC /* Users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
