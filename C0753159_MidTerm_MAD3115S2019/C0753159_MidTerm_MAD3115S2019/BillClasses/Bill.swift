@@ -7,45 +7,44 @@
 //
 
 import Foundation
-/*
-class Bill : IDisplay
-{
-    
-    
-    var billID:Int
-    var billDate:Date
-    
-    var totalAmount:Float = 0
-    
-    init(billID:Int, billDate:Date)
-    {
-        self.billID = billID
-        
-        self.billDate = billDate
-    }
-    func display() -> String {
-        return "Bill ID: \(billID)\n" +
-            "Bill Date: \(billDate)\n" +
-            "Bill Type: \(getBilltype())\n" +
-        "Total Bill Amount: \(totalAmount.currencyUnit())\n"
-    }
-    func getBilltype() -> String
-    {
-        if self is Internet
-        {
-            return "Internet"
-        }
-        else if self is Mobile
-        {
-            return "Mobile"
-        }
-        else if self is Hydro
-        {
-            return "Hydro"
-        }
-        return "None"
-    }
+
+enum Bill_Type {
+    case  Internet, Mobile, Hydro
 }
 
-    */
-
+class Bill : IDisplay{
+    var billid: Int?
+    var billdate: Date
+    var billtype: String?
+    var billtotal: Float?
+    
+    
+    var totalBill:Float{
+        var TotalBill:Float = 0.0
+        TotalBill = self.billtotal!
+        return TotalBill
+    }
+    
+    
+    init(billid:Int, billdate:Date, billtype:String ) {
+        self.billid = billid
+        self.billdate = billdate
+        self.billtype = billtype
+    }
+    
+    
+    
+    func display() {
+        print("Bill Id : \(self.billid!)")
+        print("Bill Date : \(self.billdate)")
+        print("Bill Type : \(self.billtype!)")
+        print("Bill Total : \(self.totalBill)")
+        
+        
+    }
+    init() {
+        self.billid = Int()
+        self.billdate = Date()
+        self.billtype = String()
+    }
+}
