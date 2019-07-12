@@ -22,9 +22,10 @@ class MyPlistData
                     {
                         let email = user["emailid"]!
                         let password = user["password"]!
+                       
                         userDict.updateValue(password, forKey: email)
                         
-                    }
+                        }
                 }
                 
             }

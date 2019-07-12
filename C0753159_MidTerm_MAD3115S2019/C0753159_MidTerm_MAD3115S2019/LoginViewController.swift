@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         Switch.isOn = false
         MyPlistData.readDataPlist()
         // Do any additional setup after loading the view.
     }
@@ -39,19 +40,40 @@ class LoginViewController: UIViewController {
             //USER EXIST
             if ( password == pass )
             {
-                // CORRECT INFO -> NEXT SCREEN
-                //UserDefaults.standard.set(true, forKey: "isUserLoggedin")
-                //UserDefaults.standard.synchronize()
-                //self.dismiss(animated: true, completion: nil)
+                let userDefault = UserDefaults.standard
+                
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "Table")
                 
                 self.present(vc, animated: true)
                 
+                if Switch.isOn
+                {
+                    
+                    userDefault.setValue(Emailtxt.text, forKey: "emailid")
+                    userDefault.set(Passwordtxt.text, forKey: "password")
+                }
+                else
+                {
+                    userDefault.removeObject(forKey: "emailid")
+                    userDefault.removeObject(forKey: "password")
+                }
             }
             else
             {
-                let alert = UIAlertController(title: "Error", message: "User Email / Password Incorrect", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Error", message: "Try again, User Email / Password Invalid", preferredStyle: .alert)
+                
+                let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okButton)
+                
+                self.present(alert, animated: true)
+            }
+        
+            }
+            else
+            {
+                let alert = UIAlertController(title: "Error", message: "User does not exist", preferredStyle: UIAlertController.Style.alert)
                 
                 let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
                 let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
@@ -60,32 +82,19 @@ class LoginViewController: UIViewController {
                 self .present(alert, animated: true ,completion: nil)
                 // INCORRECT INFO
             }
-        }
-        else
-        {
-            //USER NOT EXIST
-            let alert = UIAlertController(title: "Error", message: "User doesnot exit", preferredStyle: UIAlertController.Style.alert)
-            
-            let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-            let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-            alert.addAction(actionOk)
-            alert.addAction(actionCanel)
-            self .present(alert, animated: true ,completion: nil)
-        }
         
+       
     }
-    
-    
+    @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue) {
+        let L = storyboardSegue.source as! LoginViewController
+       Passwordtxt.text = ""
+       Emailtxt.text = ""
+    }
 }
     
+    
+
+    
 
 
-/*
- let alert = UIAlertController(title: "Error", message: "User Email / Password Incorrect", preferredStyle: UIAlertController.Style.alert)
- 
- let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
- let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
- alert.addAction(actionOk)
- alert.addAction(actionCanel)
- self .present(alert, animated: true ,completion: nil)
- */
+
