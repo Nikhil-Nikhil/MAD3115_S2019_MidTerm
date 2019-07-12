@@ -28,6 +28,16 @@ class LoginViewController: UIViewController {
         MyPlistData.readDataPlist()
         // Do any additional setup after loading the view.
     }
+    private func getRememberMeValues() {
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "emailid") {
+            Emailtxt.text = email
+            if let password = userDefault.string(forKey: "password") {
+               Passwordtxt.text = password
+            }
+        }
+    }
+
 
     @IBAction func LoginActionTapped(_ sender: Any)
     {
@@ -48,19 +58,24 @@ class LoginViewController: UIViewController {
                 
                 self.present(nc, animated: true)
                 
-                if Switch.isOn
-                {
-                    
-                    userDefault.setValue(Emailtxt.text, forKey: "emailid")
-                    userDefault.set(Passwordtxt.text, forKey: "password")
+                if Switch.isOn{
+                    userDefault.setValue(Emailtxt.text, forKey: "userEmail")
+                    userDefault.set(Passwordtxt.text, forKey: "userPassword")
+                }else {
+                    userDefault.removeObject(forKey: "userEmail")
+                    userDefault.removeObject(forKey: "userPassword")
                 }
-                else
-                {
-                    userDefault.removeObject(forKey: "emailid")
-                    userDefault.removeObject(forKey: "password")
-                }
+                
             }
-            else
+        }
+       else {
+            let alert = UIAlertController(title: "Error", message: "Invalid email or Password", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true)
+        }
+    }
+           /* else
             {
                 let alert = UIAlertController(title: "Error", message: "Try again, User Email / Password Invalid", preferredStyle: .alert)
                 
@@ -84,14 +99,14 @@ class LoginViewController: UIViewController {
                 // INCORRECT INFO
             }
         
-       
+       */
     }/*
     @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue) {
         let L = storyboardSegue.source as! LoginViewController
        Passwordtxt.text = ""
        Emailtxt.text = ""
     }*/
-}
+
     
     
 
