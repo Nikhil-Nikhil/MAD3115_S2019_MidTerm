@@ -274,19 +274,63 @@
             <point key="canvasLocation" x="5876.811594202899" y="348.88392857142856"/>
         </scene>
         <!--Hydro View Controller-->
-        <scene sceneID="Z0K-wo-FN7">
+        <scene sceneID="JWa-9Q-qXp">
             <objects>
-                <viewController storyboardIdentifier="Hydro" id="iCx-sY-FSI" customClass="HydroViewController" customModule="C0753159_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hb4-2u-KOa">
+                <viewController storyboardIdentifier="Hydro" id="DD7-aM-a7L" customClass="HydroViewController" customModule="C0753159_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jeg-Q6-c0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AgencyName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Afo-09-QON">
+                                <rect key="frame" x="135" y="107" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UnitConsumed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1Z-tm-O6y">
+                                <rect key="frame" x="135" y="160" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TotalAmount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-Lc-tlz">
+                                <rect key="frame" x="135" y="213" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KF5-tA-qOk">
+                                <rect key="frame" x="20" y="321" width="374" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="584662145.084378">
+                                    <!--2019-07-12 22:09:05 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ke-nF-ecV">
+                                <rect key="frame" x="188" y="274" width="39" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="BUd-2Q-pfR"/>
+                        <viewLayoutGuide key="safeArea" id="P76-8G-f5M"/>
                     </view>
+                    <connections>
+                        <outlet property="Datepicker" destination="KF5-tA-qOk" id="QQ6-ZA-1Su"/>
+                        <outlet property="lbldate" destination="6ke-nF-ecV" id="HlU-mi-cUa"/>
+                        <outlet property="txtAgency" destination="Afo-09-QON" id="2H9-q5-FcA"/>
+                        <outlet property="txtTotalAmount" destination="FIN-Lc-tlz" id="7ke-yF-LHz"/>
+                        <outlet property="txtunitConsumed" destination="V1Z-tm-O6y" id="JlP-8o-z8r"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bp-Gj-ySj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDu-zv-6CH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6665" y="362"/>
+            <point key="canvasLocation" x="6662.3188405797109" y="367.63392857142856"/>
         </scene>
         <!--Internet View Controller-->
         <scene sceneID="weI-1v-07W">

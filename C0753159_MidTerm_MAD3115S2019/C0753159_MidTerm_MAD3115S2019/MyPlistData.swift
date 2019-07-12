@@ -48,8 +48,8 @@ class MyPlistData
         var bill_4 = Internet(billid: 4, billdate: Date(), billtype: "Internet", providername: "BSNL", gbused: 55.67)
         var bill_5 = Internet(billid: 5, billdate: Date(), billtype: "Internet", providername: "Tata", gbused: 39.67)
         
-        var bill_6 = Hydro(bill_id: 6, bill_date: Date(), bill_type: "Hydro", a_name: "Gig Tech", u_consume: 77)
-        var bill_7 = Hydro(bill_id: 7, bill_date: Date(), bill_type: "Hydro", a_name: "Info Tech", u_consume: 97)
+        var bill_6 = Hydro(bill_id: 6, bill_date: Date(), bill_type: "Hydro", agencyName: "Gig Tech", unitconsume: 77)
+        var bill_7 = Hydro(bill_id: 7, bill_date: Date(), bill_type: "Hydro", agencyName: "Info Tech", unitconsume: 97)
         
         // creating customers
         var customer_1 = try Customer(customerid: 1, firstname: "Nikhil",lastname: "Nikhil", emailid: "nikhil@gmail.com" ,billarray: [bill_1,bill_2,bill_3])
