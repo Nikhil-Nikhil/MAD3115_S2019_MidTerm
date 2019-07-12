@@ -102,14 +102,22 @@ class LoginViewController: UIViewController {
        */
     @IBAction func unWindlogoutFromAnyScreen(storyboardsegue: UIStoryboardSegue)
     {
-        print("logout")
-        let s = storyboardsegue.source as! LoginViewController
-       Emailtxt.text = ""
-        Passwordtxt.text = ""
+        let b = storyboardsegue.source as! BillListTableViewController
+       
+        if(Switch.isOn)
+        {
+            getRememberMeValues()
+        }
+        else
+        {
+            Passwordtxt.text = ""
+            Emailtxt.text = ""
+        }
+       
+    }
     }
 
 
-}
     
 
     
