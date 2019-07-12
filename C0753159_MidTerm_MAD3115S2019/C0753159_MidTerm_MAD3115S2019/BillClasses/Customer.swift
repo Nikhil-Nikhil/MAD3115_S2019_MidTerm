@@ -12,7 +12,7 @@ class Customer : IDisplay {
     var firstName: String?
     var lastName: String?
     var emailId: String?
-    var phonenumber: String?
+    var phonenumber: String? = ""
     var billarray: [Bill]
     var totalamount: Float
     {

@@ -52,7 +52,7 @@ self.navigationItem.rightBarButtonItem = add
             
             self.present(alert, animated: true)
         }
-        if txtfirstname.text! == ""
+        if txtphone.text! == ""
         {
             let alert = UIAlertController(title: "Error", message: "please enter firstname", preferredStyle: .alert)
             

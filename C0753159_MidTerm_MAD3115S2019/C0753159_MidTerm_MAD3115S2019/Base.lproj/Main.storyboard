@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" id="hlM-LC-SC7">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="41f-Fa-pgd">
                             <connections>
-                                <segue destination="ODi-T1-w5q" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboardSegue:" id="7VO-n9-wRh"/>
+                                <segue destination="ODi-T1-w5q" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboardSegue:" id="80V-UE-uee"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="GDp-ZR-EgE">
