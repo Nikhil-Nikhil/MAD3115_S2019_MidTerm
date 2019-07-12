@@ -20,6 +20,11 @@ class ViewBillDetailsViewController: UIViewController {
         let add = UIBarButtonItem(title: "Add ", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goto))
         self.navigationItem.rightBarButtonItem = add
         super.viewDidLoad()
+        
+        lblfullname.text = MyPlistData.selectedCustomer?.fullName
+        lblemail.text = MyPlistData.selectedCustomer?.emailId
+        lblTotalAmount.text = "$\(String(describing: MyPlistData.selectedCustomer?.totalamount))"
+        
 
         // Do any additional setup after loading the view.
     }
