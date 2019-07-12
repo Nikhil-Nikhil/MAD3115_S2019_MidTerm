@@ -33,11 +33,11 @@ class Customer : IDisplay {
     
     init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber:Int,billarray: [Bill]) throws {
         
-        if phoneNumber  < 10
+      /*  if phoneNumber  < 10
         {
            throw ErrorType.InvalidNumber
         }
-        
+        */
         self.customerId = customerid
         self.firstName = firstname
         self.lastName = lastname

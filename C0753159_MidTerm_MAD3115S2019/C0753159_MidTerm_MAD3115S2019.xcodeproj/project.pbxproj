@@ -20,6 +20,7 @@
 		CEABFCB322D7FD5C00984420 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB222D7FD5C00984420 /* IDisplay.swift */; };
 		CEABFCB522D7FF7100984420 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB422D7FF7100984420 /* Customer.swift */; };
 		CEABFCB722D802D500984420 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB622D802D500984420 /* Errors.swift */; };
+		CEABFCB922D8069800984420 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB822D8069800984420 /* Hydro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CEABFCB222D7FD5C00984420 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		CEABFCB422D7FF7100984420 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		CEABFCB622D802D500984420 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		CEABFCB822D8069800984420 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				CEABFCB222D7FD5C00984420 /* IDisplay.swift */,
 				CEABFCB422D7FF7100984420 /* Customer.swift */,
 				CEABFCB622D802D500984420 /* Errors.swift */,
+				CEABFCB822D8069800984420 /* Hydro.swift */,
 			);
 			path = BillClasses;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */,
 				CEABFCAF22D7FCAF00984420 /* GbExtension.swift in Sources */,
 				CEABFCA622D7F9AD00984420 /* Bill.swift in Sources */,
+				CEABFCB922D8069800984420 /* Hydro.swift in Sources */,
 				CEABFCB722D802D500984420 /* Errors.swift in Sources */,
 				CEABFCB522D7FF7100984420 /* Customer.swift in Sources */,
 				CEABFC9322D7F1DE00984420 /* AppDelegate.swift in Sources */,
