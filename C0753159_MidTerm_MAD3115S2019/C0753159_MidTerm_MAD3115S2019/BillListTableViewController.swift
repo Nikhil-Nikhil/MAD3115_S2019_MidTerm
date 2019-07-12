@@ -51,7 +51,7 @@ class BillListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tablecell", for: indexPath)
         //print("customer array : ",MyPlistData.customersArray)
         let customer : Customer = MyPlistData.customersArray[indexPath.row]
-        print("customer : ",customer.fullName)
+       // print("customer : ",customer.fullName)
         cell.textLabel?.text = customer.fullName
 
         return cell

@@ -85,5 +85,43 @@ class HydroViewController: UIViewController {
     }
     */
 */
+    @IBAction func addaction(_ sender: Any) {
+        if txtAgency.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter agencyname", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
+        else if txtunitConsumed.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter unitconsumed", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
+        else if txtTotalAmount.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter total amount", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
+        
+            
+       /* else{
+         
+    }*/
 
+    }
+    
 }

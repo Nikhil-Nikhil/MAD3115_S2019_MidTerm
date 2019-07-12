@@ -10,6 +10,13 @@ import UIKit
 
 class MobileViewController: UIViewController {
 
+    @IBOutlet weak var providername: UITextField!
+    
+    @IBOutlet weak var datepicker: UIDatePicker!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet var minuteused: UIView!
+    @IBOutlet weak var internetgbused: UITextField!
+    @IBOutlet weak var planename: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
