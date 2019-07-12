@@ -21,7 +21,7 @@ class Bill : IDisplay{
     
     var totalBill:Float{
         var TotalBill:Float = 0.0
-        TotalBill = self.billtotal!
+        //TotalBill = self.billtotal!
         return TotalBill
     }
     

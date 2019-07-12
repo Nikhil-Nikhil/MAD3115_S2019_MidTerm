@@ -1,5 +1,5 @@
 //
-//  BillListTableViewController.swift
+//  myTableViewController.swift
 //  C0753159_MidTerm_MAD3115S2019
 //
 //  Created by User on 2019-07-12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BillListTableViewController: UITableViewController {
+class myTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,24 +24,23 @@ class BillListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return MyPlistData.customersArray.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Tablecell", for: indexPath)
-        //print("customer array : ",MyPlistData.customersArray)
-        let customer : Customer = MyPlistData.customersArray[indexPath.row]
-        print("customer : ",customer.fullName)
-        cell.textLabel?.text = customer.fullName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.

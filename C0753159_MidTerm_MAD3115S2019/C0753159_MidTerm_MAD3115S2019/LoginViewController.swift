@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
             if ( password == pass )
             {
                 let userDefault = UserDefaults.standard
-                
+                MyPlistData.GetCustomer()
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "Table")
                 

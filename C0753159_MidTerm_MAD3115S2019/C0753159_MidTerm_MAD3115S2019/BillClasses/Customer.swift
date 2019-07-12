@@ -11,7 +11,6 @@ class Customer : IDisplay {
     let customerId: Int?
     var firstName: String?
     var lastName: String?
-    var fullName: String?
     var emailId: String?
     var phoneNumber : String
     var billarray: [Bill]
@@ -21,14 +20,14 @@ class Customer : IDisplay {
         
         for bill in billarray
         {
-            TotalAmount = TotalAmount + bill.billtotal!
+            //TotalAmount = TotalAmount + bill.billtotal!
         }
         return TotalAmount
     }
     
     
     
-    private static var customerList=[Int:Customer]()
+    public static var customerList=[Int:Customer]()
     
     
     init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber: String,billarray: [Bill]) throws {
@@ -62,8 +61,8 @@ class Customer : IDisplay {
         
     }
     
-    func FullName(){
-        print("Customer Full Name : \(self.firstName!) \(self.lastName!)")
+    var fullName:String{
+        return "\(self.firstName!)   \(self.lastName!)"
     }
     
     func bills(){
@@ -82,7 +81,7 @@ class Customer : IDisplay {
     
     func display() {
         print("Customer Id : \(self.customerId!)")
-        print(FullName())
+        
         print("Customer Email Id : \(self.emailId!)")
         print("      ----Bill Information----")
         print("**************************************")
