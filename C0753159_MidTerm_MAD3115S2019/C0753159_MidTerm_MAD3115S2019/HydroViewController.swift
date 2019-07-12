@@ -27,15 +27,15 @@ class HydroViewController: UIViewController {
         
        
         
-        let barButtonDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(add))
-        self.navigationItem.rightBarButtonItem = barButtonDone
+        //let barButtonDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(add))
+        //self.navigationItem.rightBarButtonItem = barButtonDone
         
         
         DatePicker.datePickerMode = .date
         
        }
     
-    
+   /*
     @objc func add(sender:UIBarButtonItem)
     {
         if (DatePicker.next == "" || txtAgency.text == "" || txtTotalAmount.text == "" || txtunitConsumed.text == "")
@@ -84,5 +84,6 @@ class HydroViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+*/
 
-
+}
