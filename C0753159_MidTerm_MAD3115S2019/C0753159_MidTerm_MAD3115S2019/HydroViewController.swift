@@ -27,7 +27,7 @@ class HydroViewController: UIViewController {
         
        
         
-        let barButtonDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(performAdd))
+        let barButtonDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(add))
         self.navigationItem.rightBarButtonItem = barButtonDone
         
         
@@ -36,11 +36,11 @@ class HydroViewController: UIViewController {
        }
     
     
-    @objc func performAdd(sender:UIBarButtonItem)
+    @objc func add(sender:UIBarButtonItem)
     {
         if (DatePicker.next == "" || txtAgency.text == "" || txtTotalAmount.text == "" || txtunitConsumed.text == "")
         {
-            let alertController = UIAlertController(title: "Error", message: "Please Fill All the values.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "all fields are required", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertController.addAction(action)
             self.present(alertController, animated: true)
