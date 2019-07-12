@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEABFC9322D7F1DE00984420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFC9222D7F1DE00984420 /* AppDelegate.swift */; };
-		CEABFC9522D7F1DE00984420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFC9422D7F1DE00984420 /* ViewController.swift */; };
+		CEABFC9522D7F1DE00984420 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFC9422D7F1DE00984420 /* LoginViewController.swift */; };
 		CEABFC9822D7F1DE00984420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9622D7F1DE00984420 /* Main.storyboard */; };
 		CEABFC9A22D7F1E000984420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9922D7F1E000984420 /* Assets.xcassets */; };
 		CEABFC9D22D7F1E000984420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEABFC9B22D7F1E000984420 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		CEABFC8F22D7F1DE00984420 /* C0753159_MidTerm_MAD3115S2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0753159_MidTerm_MAD3115S2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEABFC9222D7F1DE00984420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEABFC9422D7F1DE00984420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEABFC9422D7F1DE00984420 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEABFC9722D7F1DE00984420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEABFC9922D7F1E000984420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEABFC9C22D7F1E000984420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				CEABFCA922D7FB3400984420 /* Extensions */,
 				CEABFCA422D7F84C00984420 /* BillClasses */,
 				CEABFC9222D7F1DE00984420 /* AppDelegate.swift */,
-				CEABFC9422D7F1DE00984420 /* ViewController.swift */,
+				CEABFC9422D7F1DE00984420 /* LoginViewController.swift */,
 				CEABFC9622D7F1DE00984420 /* Main.storyboard */,
 				CEABFC9922D7F1E000984420 /* Assets.xcassets */,
 				CEABFC9B22D7F1E000984420 /* LaunchScreen.storyboard */,
@@ -185,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEABFCB322D7FD5C00984420 /* IDisplay.swift in Sources */,
-				CEABFC9522D7F1DE00984420 /* ViewController.swift in Sources */,
+				CEABFC9522D7F1DE00984420 /* LoginViewController.swift in Sources */,
 				CEABFCB122D7FCE400984420 /* UnitExtension.swift in Sources */,
 				CEABFCBB22D808D200984420 /* Mobile.swift in Sources */,
 				CEABFCAB22D7FBDC00984420 /* DateExtension.swift in Sources */,
