@@ -12,6 +12,7 @@ class Customer : IDisplay {
     var firstName: String?
     var lastName: String?
     var emailId: String?
+    var phonenumber: String?
     var billarray: [Bill]
     var totalamount: Float
     {
@@ -29,14 +30,14 @@ class Customer : IDisplay {
     public static var customerList=[Int:Customer]()
     
     
-    init(customerid: Int,firstname: String,lastname: String,emailid: String,billarray: [Bill]) throws {
+    init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber: String,billarray: [Bill]) throws {
         
       
         self.customerId = customerid
         self.firstName = firstname
         self.lastName = lastname
         self.emailId = emailid
-        
+        self.phonenumber = phonenumber
         self.billarray = billarray
     }
     

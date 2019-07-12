@@ -52,14 +52,14 @@ class MyPlistData
         var bill_7 = Hydro(bill_id: 7, bill_date: Date(), bill_type: "Hydro", a_name: "Info Tech", u_consume: 97)
         
         // creating customers
-        var customer_1 = try Customer(customerid: 1, firstname: "Nikhil",lastname: "Nikhil", emailid: "nikhil@gmail.com", billarray: [bill_1,bill_2,bill_3])
+        var customer_1 = try Customer(customerid: 1, firstname: "Nikhil",lastname: "Nikhil", emailid: "nikhil@gmail.com",phonenumber: "6573886791" ,billarray: [bill_1,bill_2,bill_3])
         customer_1.display() // displaying customer detail
         Customer.customerDetail(customer: customer_1) // addind into customer dictionary
-        var customer_2 = try Customer(customerid: 2, firstname: "kishore", lastname: "narang",emailid: "kishore@gmail.com", billarray: [bill_7,bill_5,bill_4])
+        var customer_2 = try Customer(customerid: 2, firstname: "kishore", lastname: "narang",emailid: "kishore@gmail.com",phonenumber: "4372186677", billarray: [bill_7,bill_5,bill_4])
         customer_2.display()
         Customer.customerDetail(customer: customer_2)
         
-        var customer_3 = try Customer(customerid: 3, firstname: "guarav", lastname: "sharma", emailid: "guarav@gmail.com", billarray: [bill_3,bill_2,bill_6,bill_1])
+        var customer_3 = try Customer(customerid: 3, firstname: "guarav", lastname: "sharma", emailid: "guarav@gmail.com",phonenumber: "6473344566", billarray: [bill_3,bill_2,bill_6,bill_1])
         customer_3.display()
         Customer.customerDetail(customer: customer_3)
         self.customersArray = Array(Customer.customerList.values)

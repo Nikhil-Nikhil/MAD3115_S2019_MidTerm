@@ -211,6 +211,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOG-7g-bnh">
+                                <rect key="frame" x="55" y="199" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Userphonenumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDE-KN-hCW">
+                                <rect key="frame" x="232" y="198" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1No-ez-qtt"/>
@@ -224,6 +238,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MK2-Rk-ALg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5092.753623188406" y="334.82142857142856"/>
+        </scene>
+        <!--Bill Types View Controller-->
+        <scene sceneID="oOr-Fc-Za2">
+            <objects>
+                <viewController storyboardIdentifier="BillAdd" id="wPb-Ce-efa" customClass="BillTypesViewController" customModule="C0753159_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eV7-9T-7E5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHz-JJ-8Mu">
+                                <rect key="frame" x="20" y="86" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="billType" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIH-EZ-A3g">
+                                <rect key="frame" x="10" y="157" width="394" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muo-sp-QAz">
+                                <rect key="frame" x="184" y="464" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="addbill"/>
+                                <connections>
+                                    <action selector="addbillaction:" destination="wPb-Ce-efa" eventType="touchUpInside" id="4mL-PJ-7P3"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZE-dR-L0k">
+                                <rect key="frame" x="0.0" y="183" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xIH-EZ-A3g" firstAttribute="top" secondItem="IHz-JJ-8Mu" secondAttribute="bottom" constant="65" id="1R6-Ej-SYF"/>
+                            <constraint firstItem="QZE-dR-L0k" firstAttribute="top" secondItem="xIH-EZ-A3g" secondAttribute="bottom" constant="47.5" id="61l-zI-MKD"/>
+                            <constraint firstItem="QZE-dR-L0k" firstAttribute="trailing" secondItem="tHd-tt-Vh9" secondAttribute="trailing" id="9Qp-dM-NlE"/>
+                            <constraint firstItem="IHz-JJ-8Mu" firstAttribute="leading" secondItem="tHd-tt-Vh9" secondAttribute="leading" constant="20" id="MgU-t0-Enz"/>
+                            <constraint firstItem="tHd-tt-Vh9" firstAttribute="trailing" secondItem="IHz-JJ-8Mu" secondAttribute="trailing" constant="20" id="Ykv-Gx-aC8"/>
+                            <constraint firstItem="QZE-dR-L0k" firstAttribute="leading" secondItem="tHd-tt-Vh9" secondAttribute="leading" id="o8W-mf-2es"/>
+                            <constraint firstItem="xIH-EZ-A3g" firstAttribute="leading" secondItem="tHd-tt-Vh9" secondAttribute="leading" constant="20" id="p4l-fx-9et"/>
+                            <constraint firstItem="IHz-JJ-8Mu" firstAttribute="top" secondItem="tHd-tt-Vh9" secondAttribute="top" constant="42" id="qe8-y1-JUd"/>
+                            <constraint firstItem="xIH-EZ-A3g" firstAttribute="trailing" secondItem="tHd-tt-Vh9" secondAttribute="trailing" id="rpM-3h-OyF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tHd-tt-Vh9"/>
+                    </view>
+                    <connections>
+                        <outlet property="billlabel" destination="IHz-JJ-8Mu" id="dgd-4i-eTt"/>
+                        <outlet property="billpicker" destination="QZE-dR-L0k" id="GcG-OA-iob"/>
+                        <outlet property="btnaddbill" destination="Muo-sp-QAz" id="7Ic-5w-ui0"/>
+                        <outlet property="lblBillTypes" destination="xIH-EZ-A3g" id="aYM-Z5-aMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46z-Wz-Oon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5876.811594202899" y="348.88392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z0K-wo-FN7">
+            <objects>
+                <viewController id="iCx-sY-FSI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hb4-2u-KOa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BUd-2Q-pfR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bp-Gj-ySj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6665" y="362"/>
         </scene>
         <!--Add New Bill View Controller-->
         <scene sceneID="lpl-Zm-ody">
@@ -256,6 +342,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phonenumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-KX-chy">
+                                <rect key="frame" x="108" y="306" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -275,11 +368,12 @@
                         <outlet property="txtemail" destination="YRM-Yw-pBR" id="AYq-aG-u0q"/>
                         <outlet property="txtfirstname" destination="ZEN-8n-fhl" id="CWD-FG-Fqu"/>
                         <outlet property="txtlastname" destination="Edh-jQ-9Cm" id="ud0-lk-14v"/>
+                        <outlet property="txtphone" destination="9dk-KX-chy" id="Bby-lX-gfX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKM-k8-4gB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4354" y="148"/>
+            <point key="canvasLocation" x="4353.623188405797" y="147.99107142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4t4-OR-4FK">

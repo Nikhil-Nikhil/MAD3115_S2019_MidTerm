@@ -13,6 +13,7 @@ class AddNewBillViewController: UIViewController {
     @IBOutlet weak var txtfirstname: UITextField!
     @IBOutlet weak var txtlastname: UITextField!
     @IBOutlet weak var txtemail: UITextField!
+    @IBOutlet weak var txtphone: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         let add = UIBarButtonItem(title: "Add Customer", style: UIBarButtonItem.Style.plain, target: self, action: #selector(back))
@@ -51,9 +52,19 @@ self.navigationItem.rightBarButtonItem = add
             
             self.present(alert, animated: true)
         }
+        if txtfirstname.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter firstname", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
         else{
             do{
-            var customer = try Customer(customerid: 1, firstname: txtfirstname.text!, lastname: txtlastname.text!, emailid: txtemail.text!, billarray: [])
+            var customer = try Customer(customerid: 1, firstname: txtfirstname.text!, lastname: txtlastname.text!, emailid: txtemail.text!,phonenumber: txtphone.text!, billarray: [])
                 
                 MyPlistData.customersArray.append(customer)
             }
