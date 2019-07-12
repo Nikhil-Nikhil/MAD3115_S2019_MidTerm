@@ -23,6 +23,8 @@
 		CEABFCB922D8069800984420 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCB822D8069800984420 /* Hydro.swift */; };
 		CEABFCBB22D808D200984420 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCBA22D808D200984420 /* Mobile.swift */; };
 		CEABFCBD22D8098900984420 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABFCBC22D8098900984420 /* Internet.swift */; };
+		CEE9AF2122D93A2F00094385 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9AF2022D93A2F00094385 /* InternetViewController.swift */; };
+		CEE9AF2322D93A3F00094385 /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9AF2222D93A3F00094385 /* MobileViewController.swift */; };
 		CEEB8D2722D80FBE003186EC /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEB8D2622D80FBE003186EC /* Users.plist */; };
 		CEEB8D2922D83021003186EC /* MyPlistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB8D2822D83021003186EC /* MyPlistData.swift */; };
 		CEEB8D2D22D8D65A003186EC /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB8D2C22D8D65A003186EC /* AddNewBillViewController.swift */; };
@@ -51,6 +53,8 @@
 		CEABFCB822D8069800984420 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		CEABFCBA22D808D200984420 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		CEABFCBC22D8098900984420 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		CEE9AF2022D93A2F00094385 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		CEE9AF2222D93A3F00094385 /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
 		CEEB8D2622D80FBE003186EC /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		CEEB8D2822D83021003186EC /* MyPlistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlistData.swift; sourceTree = "<group>"; };
 		CEEB8D2C22D8D65A003186EC /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				CEEB8D3222D9054A003186EC /* ViewBillDetailsViewController.swift */,
 				CEED633E22D915CF00C2572B /* BillTypesViewController.swift */,
 				CEEBDE9222D9316300808FB0 /* HydroViewController.swift */,
+				CEE9AF2022D93A2F00094385 /* InternetViewController.swift */,
+				CEE9AF2222D93A3F00094385 /* MobileViewController.swift */,
 			);
 			path = C0753159_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			files = (
 				CEABFCB322D7FD5C00984420 /* IDisplay.swift in Sources */,
 				CEABFC9522D7F1DE00984420 /* LoginViewController.swift in Sources */,
+				CEE9AF2322D93A3F00094385 /* MobileViewController.swift in Sources */,
 				CEEB8D2922D83021003186EC /* MyPlistData.swift in Sources */,
 				CEABFCB122D7FCE400984420 /* UnitExtension.swift in Sources */,
 				CEABFCBB22D808D200984420 /* Mobile.swift in Sources */,
@@ -225,6 +232,7 @@
 				CEEBDE9322D9316300808FB0 /* HydroViewController.swift in Sources */,
 				CEEB8D2D22D8D65A003186EC /* AddNewBillViewController.swift in Sources */,
 				CEABFCAD22D7FC0B00984420 /* DollarExtension.swift in Sources */,
+				CEE9AF2122D93A2F00094385 /* InternetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

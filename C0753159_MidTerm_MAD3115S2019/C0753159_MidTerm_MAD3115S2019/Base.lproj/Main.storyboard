@@ -245,14 +245,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muo-sp-QAz">
-                                <rect key="frame" x="184" y="464" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="addbill"/>
-                                <connections>
-                                    <action selector="addbillaction:" destination="wPb-Ce-efa" eventType="touchUpInside" id="4mL-PJ-7P3"/>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZE-dR-L0k">
                                 <rect key="frame" x="0.0" y="183" width="414" height="216"/>
                             </pickerView>
@@ -274,7 +266,6 @@
                     <connections>
                         <outlet property="billlabel" destination="IHz-JJ-8Mu" id="dgd-4i-eTt"/>
                         <outlet property="billpicker" destination="QZE-dR-L0k" id="GcG-OA-iob"/>
-                        <outlet property="btnaddbill" destination="Muo-sp-QAz" id="7Ic-5w-ui0"/>
                         <outlet property="lblBillTypes" destination="xIH-EZ-A3g" id="aYM-Z5-aMD"/>
                     </connections>
                 </viewController>
@@ -296,6 +287,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Bp-Gj-ySj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6665" y="362"/>
+        </scene>
+        <!--Internet View Controller-->
+        <scene sceneID="weI-1v-07W">
+            <objects>
+                <viewController storyboardIdentifier="Internet" id="yo9-An-UuF" customClass="InternetViewController" customModule="C0753159_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqO-ag-D91">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cPZ-d5-pya"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUN-5B-slb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7497" y="493"/>
+        </scene>
+        <!--Mobile View Controller-->
+        <scene sceneID="tAM-FJ-hfB">
+            <objects>
+                <viewController storyboardIdentifier="Mobile" id="DEr-JC-Bkx" customClass="MobileViewController" customModule="C0753159_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lW-0g-Eo7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eZm-AP-CrK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eU-yc-U6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8348" y="457"/>
         </scene>
         <!--Add New Bill View Controller-->
         <scene sceneID="lpl-Zm-ody">

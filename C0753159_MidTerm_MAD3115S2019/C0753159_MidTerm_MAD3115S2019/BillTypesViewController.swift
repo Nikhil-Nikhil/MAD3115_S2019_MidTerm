@@ -29,6 +29,14 @@ class BillTypesViewController: UIViewController , UIPickerViewDelegate, UIPicker
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let hydro = storyboard.instantiateViewController(withIdentifier: "Hydro")
             self.navigationController?.pushViewController(hydro, animated: true)
+        case 1:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let hydro = storyboard.instantiateViewController(withIdentifier: "Internet")
+            self.navigationController?.pushViewController(hydro, animated: true)
+        case 2:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let hydro = storyboard.instantiateViewController(withIdentifier: "Mobile")
+            self.navigationController?.pushViewController(hydro, animated: true)
         default:
             print()
         }
@@ -46,15 +54,19 @@ class BillTypesViewController: UIViewController , UIPickerViewDelegate, UIPicker
         // Do any additional setup after loading the view.
         billpicker.dataSource = self
         billpicker.delegate = self
-        let customer = MyPlistData.customersArray[MyPlistData.selectedCustomer!]
+        let customer = MyPlistData.selectedCustomer!
+        
         
       
 
 }
 
-    @IBAction func addbillaction(_ sender: Any) {
+   /* @IBAction func addbillaction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let hydro = storyboard.instantiateViewController(withIdentifier: "Hydro")
+        self.navigationController?.pushViewController(hydro, animated: true)
     }
-    
+    */
     /*
     // MARK: - Navigation
 
