@@ -18,6 +18,7 @@ class BillListTableViewController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+      
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -25,6 +26,9 @@ class BillListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func viewDidAppear(_ animated: Bool) {
+          tableView.reloadData()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -35,6 +39,11 @@ class BillListTableViewController: UITableViewController {
         return MyPlistData.customersArray.count
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle:nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "viewDetails")
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tablecell", for: indexPath)
@@ -44,7 +53,9 @@ class BillListTableViewController: UITableViewController {
         cell.textLabel?.text = customer.fullName
 
         return cell
+        
     }
+    
 
     /*
     // Override to support conditional editing of the table view.

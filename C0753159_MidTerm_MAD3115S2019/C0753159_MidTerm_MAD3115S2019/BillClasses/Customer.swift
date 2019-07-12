@@ -12,11 +12,10 @@ class Customer : IDisplay {
     var firstName: String?
     var lastName: String?
     var emailId: String?
-    var phoneNumber : String
     var billarray: [Bill]
     var totalamount: Float
     {
-        var TotalAmount: Float = 0.0
+        var TotalAmount:Float = 0.0
         
         for bill in billarray
         {
@@ -30,13 +29,9 @@ class Customer : IDisplay {
     public static var customerList=[Int:Customer]()
     
     
-    init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber: String,billarray: [Bill]) throws {
+    init(customerid: Int,firstname: String,lastname: String,emailid: String,billarray: [Bill]) throws {
         
-       if phonenumber.count  != 10
-        {
-           throw ErrorType.InvalidNumber
-        }
-        self.phoneNumber = phonenumber
+      
         self.customerId = customerid
         self.firstName = firstname
         self.lastName = lastname

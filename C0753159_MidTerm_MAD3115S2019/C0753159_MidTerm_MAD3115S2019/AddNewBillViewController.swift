@@ -15,13 +15,60 @@ class AddNewBillViewController: UIViewController {
     @IBOutlet weak var txtemail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let add = UIBarButtonItem(title: "Add Customer", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goto))
+        let add = UIBarButtonItem(title: "Add Customer", style: UIBarButtonItem.Style.plain, target: self, action: #selector(back))
 self.navigationItem.rightBarButtonItem = add
         // Do any additional setup after loading the view.
     }
-    @objc func goto()
+    @objc func back()
     {
-        
+        if txtfirstname.text! == ""
+            {
+                let alert = UIAlertController(title: "Error", message: "please enter firstname", preferredStyle: .alert)
+                
+                let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okButton)
+                
+                self.present(alert, animated: true)
+        }
+        else if txtlastname.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter lastname", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
+        else if txtemail.text! == ""
+        {
+            let alert = UIAlertController(title: "Error", message: "please enter email", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            self.present(alert, animated: true)
+        }
+        else{
+            do{
+            var customer = try Customer(customerid: 1, firstname: txtfirstname.text!, lastname: txtlastname.text!, emailid: txtemail.text!, billarray: [])
+                
+                MyPlistData.customersArray.append(customer)
+            }
+            catch
+            {
+                let alert = UIAlertController(title: "Error", message: "Unexpected Error", preferredStyle: .alert)
+                
+                let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okButton)
+                
+                self.present(alert, animated: true)
+            }
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     /*
