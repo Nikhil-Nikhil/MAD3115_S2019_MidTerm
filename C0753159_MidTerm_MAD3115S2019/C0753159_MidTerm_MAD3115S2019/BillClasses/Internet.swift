@@ -13,10 +13,10 @@ class Internet: Bill{
     var internetgbused: Float?
     
     
-    init(bill_id: Int,bill_date: Date,bill_type: String,p_name: String, i_gb_used: Float) {
-        self.providername = p_name
-        self.internetgbused = i_gb_used
-        super.init(billid: bill_id, billdate: bill_date, billtype: bill_type)
+    init(billid: Int,billdate: Date,billtype: String,providername: String, gbused: Float) {
+        self.providername = providername
+        self.internetgbused = gbused
+        super.init(billid: billid, billdate: billdate, billtype: billtype)
         
     }
     

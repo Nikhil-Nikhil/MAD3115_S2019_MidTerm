@@ -10,17 +10,17 @@ import Foundation
 class Mobile : Bill {
     var manufacturername: String?
     var planname: String?
-    var mobilenumber: Int?
+    var mobilenumber: String?
     var gbused: Float?
     var minuteused: Float?
     
-    init(bill_id: Int,bill_date: Date,bill_type: String, m_name: String,p_name: String,m_num: Int,gb_use: Float,min_use: Float) {
-        self.manufacturername = m_name
-        self.planname = p_name
-        self.mobilenumber = m_num
-        self.gbused = gb_use
-        self.minuteused = min_use
-        super.init(billid: bill_id, billdate: bill_date, billtype: bill_type)
+    init(billid: Int,billdate: Date,billtype: String, manfacturername: String,planename: String,mobilenumber: String,gbuse: Float,minuteuse: Float) {
+        self.manufacturername = manfacturername
+        self.planname = planename
+        self.mobilenumber = mobilenumber
+        self.gbused = gbuse
+        self.minuteused = minuteuse
+        super.init(billid: billid, billdate: billdate, billtype: billtype)
         
     }
     

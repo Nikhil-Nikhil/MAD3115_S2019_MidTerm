@@ -13,9 +13,9 @@ class Customer : IDisplay {
     var lastName: String?
     var fullName: String?
     var emailId: String?
-    var phoneNumber : Int
+    var phoneNumber : String
     var billarray: [Bill]
-    var totalamout: Float
+    var totalamount: Float
     {
         var TotalAmount: Float = 0.0
         
@@ -31,18 +31,18 @@ class Customer : IDisplay {
     private static var customerList=[Int:Customer]()
     
     
-    init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber:Int,billarray: [Bill]) throws {
+    init(customerid: Int,firstname: String,lastname: String,emailid: String,phonenumber: String,billarray: [Bill]) throws {
         
-      /*  if phoneNumber  < 10
+       if phonenumber.count  != 10
         {
            throw ErrorType.InvalidNumber
         }
-        */
+        self.phoneNumber = phonenumber
         self.customerId = customerid
         self.firstName = firstname
         self.lastName = lastname
         self.emailId = emailid
-        self.phoneNumber = phonenumber
+        
         self.billarray = billarray
     }
     
@@ -51,7 +51,7 @@ class Customer : IDisplay {
         
     }
     
-    // fetching the customer by its id
+    
     static func getCustomerById(cust_id:Int) -> Customer? {
         if let cust = customerList[cust_id] {
             return cust as Customer
@@ -92,7 +92,13 @@ class Customer : IDisplay {
         }
         print("=========================================")
         print("\n")
-        print("Total Amount : \(self.totalamout)")
+        print("Total Amount : \(self.totalamount)")
     }
-}
 
+private func isEmailvalid(Str:String) -> Bool {
+    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    
+    let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+    return emailTest.evaluate(with: Str)
+   }
+}
