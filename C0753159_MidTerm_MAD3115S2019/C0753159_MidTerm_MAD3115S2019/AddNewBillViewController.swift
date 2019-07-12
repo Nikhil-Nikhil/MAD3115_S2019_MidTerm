@@ -52,19 +52,10 @@ self.navigationItem.rightBarButtonItem = add
             
             self.present(alert, animated: true)
         }
-        if txtphone.text! == ""
-        {
-            let alert = UIAlertController(title: "Error", message: "please enter firstname", preferredStyle: .alert)
-            
-            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            
-            alert.addAction(okButton)
-            
-            self.present(alert, animated: true)
-        }
+       
         else{
             do{
-            var customer = try Customer(customerid: 1, firstname: txtfirstname.text!, lastname: txtlastname.text!, emailid: txtemail.text!,phonenumber: txtphone.text!, billarray: [])
+            var customer = try Customer(customerid: 1, firstname: txtfirstname.text!, lastname: txtlastname.text!, emailid: txtemail.text!, billarray: [])
                 
                 MyPlistData.customersArray.append(customer)
             }

@@ -26,15 +26,15 @@ class ViewBillDetailsViewController: UIViewController {
         lblfullname.text = MyPlistData.selectedCustomer?.fullName
         lblemail.text = MyPlistData.selectedCustomer?.emailId
         lblTotalAmount.text = "$\(String(describing: MyPlistData.selectedCustomer?.totalamount))"
-        lblphonenmber.text = MyPlistData.selectedCustomer?.phonenumber
+        
 
         // Do any additional setup after loading the view.
     }
     @objc func goto(){
         
         let storyboard = UIStoryboard(name: "Main", bundle:nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "BillAdd")
-        self.navigationController?.pushViewController(vc, animated: true)
+        let billadd = storyboard.instantiateViewController(withIdentifier: "BillAdd")
+        self.navigationController?.pushViewController(billadd, animated: true)
     
     }
 
