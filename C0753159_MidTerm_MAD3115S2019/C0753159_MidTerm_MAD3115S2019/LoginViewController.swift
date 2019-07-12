@@ -75,31 +75,6 @@ class LoginViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
-           /* else
-            {
-                let alert = UIAlertController(title: "Error", message: "Try again, User Email / Password Invalid", preferredStyle: .alert)
-                
-                let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                
-                alert.addAction(okButton)
-                
-                self.present(alert, animated: true)
-            }
-        
-            }
-            else
-            {
-                let alert = UIAlertController(title: "Error", message: "User does not exist", preferredStyle: UIAlertController.Style.alert)
-                
-                let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-                let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-                alert.addAction(actionOk)
-                alert.addAction(actionCanel)
-                self .present(alert, animated: true ,completion: nil)
-                // INCORRECT INFO
-            }
-        
-       */
     @IBAction func unWindlogoutFromAnyScreen(storyboardsegue: UIStoryboardSegue)
     {
         let b = storyboardsegue.source as! BillListTableViewController
