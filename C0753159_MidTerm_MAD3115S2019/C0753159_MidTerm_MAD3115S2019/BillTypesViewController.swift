@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BillTypesViewController: UIViewController {
+class BillTypesViewController: UIViewController  ,UITableViewDelegate,UITableViewDataSource {
+    
+    
 
     @IBOutlet weak var billlabel: UILabel!
     @IBOutlet weak var billpicker: UIPickerView!
@@ -17,10 +19,25 @@ class BillTypesViewController: UIViewController {
     var billtype = ["Hydro","Internet","Mobile"]
     override func viewDidLoad() {
         super.viewDidLoad()
+       
 
         // Do any additional setup after loading the view.
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.billtype.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "BillAdd")
+        cell.textLabel?.text = self.billtype[indexPath.row]
+        return cell
+    }
+
+   
     @IBAction func addbillaction(_ sender: Any) {
     }
     

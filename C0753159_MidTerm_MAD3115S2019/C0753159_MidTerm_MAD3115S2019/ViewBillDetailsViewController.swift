@@ -16,7 +16,7 @@ class ViewBillDetailsViewController: UIViewController {
     
     @IBOutlet weak var lblTotalAmount: UILabel!
     
-    @IBOutlet weak var lblphonenmber: UILabel!
+    
     
     override func viewDidLoad() {
         let add = UIBarButtonItem(title: "Add ", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goto))
